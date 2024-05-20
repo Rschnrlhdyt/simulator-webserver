@@ -3,7 +3,6 @@
 
 # In[6]:
 
-
 #simulator web server
 get_ipython().run_line_magic('matplotlib', 'notebook')
 #import library
@@ -247,9 +246,9 @@ if __name__ == "__main__":
     env = simpy.Environment()
     
     #input parameter
-    simulation_duration_days = 30   #ganti dengan waktu simulasi yg diinginkan
-    num_servers = 1                 #ganti dengan jumlah server
-    lambda_param = 0.5              #ganti dengan lambda yg harus bernilai positif
+    simulation_duration_days = int(input("Masukkan durasi simulasi (dalam hari): "))
+    num_servers = int(input("Masukkan jumlah server: "))
+    lambda_param = float(input("Masukkan nilai lambda (harus positif): "))
     zero_interval_percentage = 0.8  #sesuaikan dengan distribusi data
     web_server = run_simulation(env, simulation_duration_days, num_servers, lambda_param, zero_interval_percentage)
     
@@ -305,10 +304,3 @@ if __name__ == "__main__":
     plt.show()
 
     print("Simulasi selesai.")
-
-
-# In[ ]:
-
-
-
-
