@@ -20,12 +20,21 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
     ```bash
     virtualenv venv
     ```
-3. Instal pustaka yang diperlukan dengan menjalankan perintah berikut:
+   Aktifkan virtual environment yang baru saja dibuat. Cara mengaktifkannya tergantung pada sistem operasi yang Anda gunakan:
+   - Windows
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - MacOs/Linux
+     ```bash
+     source venv\bin\activate
+     ```
+4. Instal pustaka yang diperlukan dengan menjalankan perintah berikut:
 
     ```bash
     pip install simpy numpy matplotlib networkx scipy
     ```
-4. Jalankan program pada folder pre-processing dengan urutan:
+5. Jalankan program pada folder pre-processing dengan urutan:
     - `log-to-csv.py`: mengubah file format .log menjadi .csv
     - `cleaning-data.py`: melakukan pembersihan entri pada file
     - `menghitung-interval-arrival.py`: menghitung interval arrival request dari file
@@ -33,9 +42,9 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
     - `distribusi-interval.py`: mencari distribusi interval permintaan
     - `distribusi-status-code.py`: mencari distribusi status code
     - `distribusi-requests-method.py`: mencari distribusi requests method
-5. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam file `simulator_webserver.py`
-6. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
+6. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam file `simulator_webserver.py`
+7. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
     - num_server
     - simulation_duration_days
     - lambda
-7. Jalankan simulator
+8. Jalankan simulator
