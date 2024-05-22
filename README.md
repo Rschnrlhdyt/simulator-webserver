@@ -10,13 +10,23 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
 
 ## Cara Penggunaan
 
-1. Pastikan Anda memiliki Python dan `pip` terinstal. Disarankan untuk menjalankan kode di jupyter notebook.
-2. Instal pustaka yang diperlukan dengan menjalankan perintah berikut:
+1. Pastikan Anda memiliki Python dan `pip` terinstal.
+2. Pastikan Anda memiliki `virtualenv` terpasang. Anda dapat menginstallnya menggunakan `pip` jika belum terpasang.
+
+    ```bash
+    pip install virtualenv
+    ```
+   Buat virtual environment di dalam direktori proyek Anda.
+
+    ```bash
+    virtualenv venv
+    ```
+3. Instal pustaka yang diperlukan dengan menjalankan perintah berikut:
 
     ```bash
     pip install simpy numpy matplotlib networkx scipy
     ```
-3. Jalankan program pada folder pre-processing dengan urutan:
+4. Jalankan program pada folder pre-processing dengan urutan:
     - `log-to-csv.py`: mengubah file format .log menjadi .csv
     - `cleaning-data.py`: melakukan pembersihan entri pada file
     - `menghitung-interval-arrival.py`: menghitung interval arrival request dari file
@@ -24,9 +34,9 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
     - `distribusi-interval.py`: mencari distribusi interval permintaan
     - `distribusi-status-code.py`: mencari distribusi status code
     - `distribusi-requests-method.py`: mencari distribusi requests method
-4. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam file `simulator_webserver.py`
-5. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
+5. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam file `simulator_webserver.py`
+6. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
     - num_server
     - simulation_duration_days
     - lambda
-6. Jalankan simulator
+7. Jalankan simulator
