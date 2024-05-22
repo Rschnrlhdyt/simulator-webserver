@@ -5,7 +5,6 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
 ## Fitur
 
 - Simulasi permintaan ke web server.
-- Dukungan untuk berbagai jenis web server.
 - Visualisasi hasil simulasi dalam bentuk grafik dan diagram pie.
 
 ## Cara Penggunaan
