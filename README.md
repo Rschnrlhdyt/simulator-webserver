@@ -32,7 +32,7 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
 4. Instal pustaka yang diperlukan dengan menjalankan perintah berikut:
 
     ```bash
-    pip install simpy numpy matplotlib networkx scipy
+    pip install -r requirements.txt
     ```
 5. Jalankan program pada folder pre-processing dengan urutan:
     - `log-to-csv.py`: mengubah file format .log menjadi .csv
