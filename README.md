@@ -10,7 +10,7 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
 ## Cara Penggunaan
 
 1. Pastikan Anda memiliki Python dan `pip` terinstal.
-2. Pastikan Anda memiliki `virtualenv` terpasang. Anda dapat menginstallnya menggunakan `pip` jika belum terpasang.
+2. Pastikan Anda memiliki `virtualenv` terpasang. Anda dapat menginstallnya menggunakan `pip` melalui command prompt.
 
     ```bash
     pip install virtualenv
@@ -23,7 +23,7 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
    Aktifkan virtual environment yang baru saja dibuat. Cara mengaktifkannya tergantung pada sistem operasi yang Anda gunakan:
    - Windows
      ```bash
-     .\venv\Scripts\activate
+     \venv\Scripts\activate
      ```
    - MacOs/Linux
      ```bash
@@ -34,7 +34,11 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
     ```bash
     pip install -r requirements.txt
     ```
-5. Jalankan program pada folder pre-processing dengan urutan:
+   Jalankan jupyter notebook
+    ```bash
+    jupyter notebook
+    ```
+6. Jalankan program pada folder pre-processing dengan urutan:
     - `log-to-csv.py`: mengubah file format .log menjadi .csv
     - `cleaning-data.py`: melakukan pembersihan entri pada file
     - `menghitung-interval-arrival.py`: menghitung interval arrival request dari file
@@ -42,9 +46,9 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
     - `distribusi-interval.py`: mencari distribusi interval permintaan
     - `distribusi-status-code.py`: mencari distribusi status code
     - `distribusi-requests-method.py`: mencari distribusi requests method
-6. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam file `simulator_webserver.py`
-7. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
+7. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam cell `simulator`
+8. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
     - num_server
     - simulation_duration_days
     - lambda
-8. Jalankan simulator
+9. Jalankan simulator
