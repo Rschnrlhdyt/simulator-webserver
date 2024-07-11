@@ -39,13 +39,13 @@ Web Server Simulator adalah alat yang digunakan untuk mensimulasikan permintaan 
     jupyter notebook
     ```
 6. Jalankan program pada folder pre-processing dengan urutan:
-    - `log-to-csv.py`: mengubah file format .log menjadi .csv
-    - `cleaning-data.py`: melakukan pembersihan entri pada file
-    - `menghitung-interval-arrival.py`: menghitung interval arrival request dari file
-    - `distribusi-requests-per-jam.py`: mencari distribusi data rata-rata permintaan per jam
-    - `distribusi-interval.py`: mencari distribusi interval permintaan
-    - `distribusi-status-code.py`: mencari distribusi status code
-    - `distribusi-requests-method.py`: mencari distribusi requests method
+    - `log-to-csv`: mengubah file format .log menjadi .csv
+    - `cleaning-data`: melakukan pembersihan entri pada file
+    - `menghitung-interval-arrival`: menghitung interval arrival request dari file
+    - `distribusi-requests-per-jam`: mencari distribusi data rata-rata permintaan per jam
+    - `distribusi-interval`: mencari distribusi interval permintaan
+    - `distribusi-status-code`: mencari distribusi status code
+    - `distribusi-requests-method`: mencari distribusi requests method
 7. Setelah mendapatkan distribusi data untuk setiap variabel yang akan digunakan, tambahkan distribusi data tersebut ke dalam cell `simulator`
 8. Parameter simulasi yang dapat diubah untuk menguji kinerja web server yaitu:
     - num_server
